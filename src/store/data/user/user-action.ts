@@ -1,5 +1,6 @@
 import {createAction} from "@reduxjs/toolkit";
 import {getAsyncActions} from "../../../functions/getAsyncActions";
+import {User} from "./index";
 
 
 const prefix = 'user'
@@ -9,5 +10,6 @@ export const setUser = createAction<User[]>(SET_USER)
 
 export const RETRIEVE_USER = getAsyncActions(`${prefix}/GET_USER`)
 export const retrieveUserRequest = createAction(RETRIEVE_USER.request)
-export const retrieveUserSuccess = createAction<Link[]>(RETRIEVE_USER.success)
+export const retrieveUserSuccess = createAction<User[]>(RETRIEVE_USER.success)
 export const retrieveUserFail = createAction<any>(RETRIEVE_USER.fail)
+
