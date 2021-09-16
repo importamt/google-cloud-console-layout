@@ -1,10 +1,10 @@
-#Google cloud console layout clone coding
+# Google cloud console layout clone coding
 
-######재사용성을 고려한 컴포넌트 설계 중심 클론 코딩
+###### 재사용성을 고려한 컴포넌트 설계 중심 클론 코딩
 
-######2021. 09. 17. 작업 시작
+###### 2021. 09. 17. 작업 시작
 
-###목표
+### 목표
 
 1. Google cloud console의 화면 구조를 클론 코딩한다.
 
