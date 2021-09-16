@@ -54,7 +54,6 @@
   "dependencies": {
     "@reduxjs/toolkit": "^1.6.1",
     "babel-preset-react-app": "^10.0.0",
-    "beautiful-react-diagrams": "^0.5.1",
     "react": "^17.0.2",
     "react-dnd-html5-backend": "^14.0.1",
     "react-docgen-typescript-loader": "^3.7.2",
