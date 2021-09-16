@@ -2,12 +2,12 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import {AboutMe} from "./src/pages";
 
-const App = () => {
+// const App = () => {
 
-    return (
-
-    )
-}
+    // return (
+    //
+    // )
+// }
 
 
 ReactDOM.render(
