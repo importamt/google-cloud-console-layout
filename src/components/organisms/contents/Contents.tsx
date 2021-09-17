@@ -1,10 +1,14 @@
 import styled from "styled-components";
+import {ReactElement} from "react";
 
+interface IContents {
+    children: ReactElement
+}
 
-export const Contents = () => {
+export const Contents = ({children}: IContents) => {
     return (
         <StyledContents>
-            789
+            {children}
         </StyledContents>
     )
 }
