@@ -1,7 +1,7 @@
 import {combineReducers, configureStore, EnhancedStore} from "@reduxjs/toolkit";
-import {all} from "@redux-saga/core/effects";
+import {all, fork} from "@redux-saga/core/effects";
 import createSagaMiddleware from "redux-saga";
-import {UserReducer} from "./data/user";
+import {UserReducer, UserSaga} from "./data/user";
 import {ConsoleReducer} from "./view/console";
 
 const dataReducer = combineReducers({
@@ -16,7 +16,7 @@ const rootReducer = combineReducers({
 })
 const rootSaga = function* () {
     yield all([
-        // fork()
+        fork(UserSaga)
     ])
 }
 
