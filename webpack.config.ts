@@ -6,12 +6,21 @@ const isProduction = process.env.NODE_ENV === PRODUCTION
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
+const path = require("path")
 
 module.exports = {
     mode: isProduction ? PRODUCTION : DEVELOPMENT,
     entry: './index.tsx',
     output: {
-        path: `${__dirname}/dist/`,
+        filename: 'bundle.js',
+        publicPath: '/',
+        path: path.resolve(__dirname, 'public')
+    },
+    devServer: {
+        contentBase: "./src",
+        hot: true,
+        port: 3000,
+        historyApiFallback: true
     },
     module: {
         rules: [
