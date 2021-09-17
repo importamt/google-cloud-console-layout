@@ -1,12 +1,22 @@
-import {StyledIcon} from "@styled-icons/styled-icon";
+import {MouseEventHandler} from "react";
+import {Dispatch} from "@reduxjs/toolkit";
 
 export * from './console-action'
-export {ConsoleReducer} from './console-reducer'
+export {ConsoleReducer, MENU_INFO} from './console-reducer'
 
 export interface Menu {
     id: string,
     parentId?: string,
     name: string,
     url: string,
-    icon: StyledIcon,
+    iconId: string,
+    actions?: Action[]
 }
+
+export interface Action {
+    id: string,
+    name: string,
+    iconId: string,
+    handleClick: (dispatch: Dispatch) => MouseEventHandler
+}
+
