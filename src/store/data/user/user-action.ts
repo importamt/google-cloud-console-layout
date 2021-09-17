@@ -5,8 +5,8 @@ import {User} from "./index";
 
 const prefix = 'user'
 
-export const SET_USER = `${prefix}/SET_USER`
-export const setUser = createAction<User[]>(SET_USER)
+export const SET_USERS = `${prefix}/SET_USERS`
+export const setUsers = createAction<User[]>(SET_USERS)
 
 export const RETRIEVE_USER = getAsyncActions(`${prefix}/GET_USER`)
 export const retrieveUserRequest = createAction(RETRIEVE_USER.request)
