@@ -1,4 +1,5 @@
 export * from './gnb'
+export * from './main-menu'
 export * from './sub-menu'
 export * from './action-bar'
 export * from './contents'

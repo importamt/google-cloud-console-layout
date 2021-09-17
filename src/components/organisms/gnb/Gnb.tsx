@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import {Hamburger, Icon} from "../../atoms";
 import {MouseEventHandler} from "react";
+import {Menu} from '@styled-icons/entypo/Menu'
 
 interface IGnb {
     title: string,
@@ -16,14 +16,16 @@ export const Gnb = ({title, handleHamburgerButtonClick}: IGnb) => {
 
 }
 
-const StyledHamburger = styled(Hamburger)`
+const StyledHamburger = styled(Menu)`
   color: white;
-  width: 30px; 
+  width: 30px;
   height: 30px;
   cursor: pointer;
 `
 
-const StyledGnb = styled.header`
+const StyledGnb = styled.section`
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   background: orange;
