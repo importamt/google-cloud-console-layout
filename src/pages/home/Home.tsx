@@ -1,23 +1,20 @@
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import {Route, RouteChildrenProps} from "react-router-dom";
 import React from "react";
 import {Intro} from "./Intro";
 import {AboutMe} from "./AboutMe";
 
-export const Home = () => {
+export const Home = ({match}: RouteChildrenProps) => {
+
+    console.log("HOME", match)
 
     return (
-        <Router basename={'/home'}>
-            <Switch>
-                <Route>
-                    <Intro/>
-                </Route>
-                <Route path={"/about-me"}>
-                    <AboutMe/>
-                </Route>
-                <Route path={"/intro"}>
-                    <Intro/>
-                </Route>
-            </Switch>
-        </Router>
+        <>
+            <Route path={`${match?.url}/about-me`}>
+                <AboutMe/>
+            </Route>
+            <Route path={`${match?.url}/intro`}>
+                <Intro/>
+            </Route>
+        </>
     )
 }
