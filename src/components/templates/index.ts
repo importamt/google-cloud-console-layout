@@ -1,1 +1,1 @@
-export * from './console-layout'
+export * from './console'
