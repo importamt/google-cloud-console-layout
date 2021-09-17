@@ -20,6 +20,7 @@ const StyledHamburger = styled(Menu)`
   color: white;
   width: 30px;
   height: 30px;
+  padding: 10px;
   cursor: pointer;
 `
 
