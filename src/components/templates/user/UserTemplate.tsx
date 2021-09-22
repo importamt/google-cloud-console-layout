@@ -13,4 +13,8 @@ export const UserTemplate = ({users}: IUserTemplate) => {
 }
 
 const StyledUserTemplate = styled.main`
+  width: calc(100% - 60px);
+  height: calc(100% - 60px);
+  padding: 30px;
+  overflow: auto;
 `
