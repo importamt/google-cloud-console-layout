@@ -13,9 +13,6 @@ export const Map = ({match}: RouteChildrenProps) => {
             <Route path={`${match?.url}/drawing`}>
                 <Drawing/>
             </Route>
-            <Route>
-                <Clustering/>
-            </Route>
         </>
     )
 }

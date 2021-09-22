@@ -9,6 +9,9 @@ export const Home = ({match}: RouteChildrenProps) => {
 
     return (
         <>
+            <Route exact path={`/`}>
+                <AboutMe/>
+            </Route>
             <Route path={`${match?.url}/about-me`}>
                 <AboutMe/>
             </Route>
