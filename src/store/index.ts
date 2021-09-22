@@ -26,7 +26,9 @@ export const createStore = (): EnhancedStore<RootState> => {
     const store = configureStore({
         reducer: rootReducer,
         middleware: (getDefaultMiddleware) =>
-            getDefaultMiddleware().concat(sagaMiddleware),
+            getDefaultMiddleware({
+                serializableCheck: false
+            }).concat(sagaMiddleware),
         devTools: process.env.NODE_ENV !== "production",
     })
     sagaMiddleware.run(rootSaga)
