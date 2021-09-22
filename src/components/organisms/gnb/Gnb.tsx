@@ -29,7 +29,7 @@ const StyledGnb = styled.section`
   height: 100%;
   display: flex;
   align-items: center;
-  background: orange;
+  background: #1A73E8;
 
   & h1 {
     color: white;

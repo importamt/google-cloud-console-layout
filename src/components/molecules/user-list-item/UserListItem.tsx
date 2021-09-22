@@ -17,5 +17,12 @@ export const UserListItem = ({user}: IUserListItem) => {
 const StyledUserListItem = styled.li`
   display: flex;
   flex-direction: column;
-  margin: 5px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  
+  & img {
+    width: 60px;
+    height: 60px;
+  }
 `

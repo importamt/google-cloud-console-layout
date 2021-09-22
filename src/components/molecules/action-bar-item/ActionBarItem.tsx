@@ -19,13 +19,21 @@ export const ActionBarItem = ({action}: IActionBarItem) => {
 
 const StyledActionBarItem = styled.li`
   cursor: pointer;
+  color: rgb(51, 103, 214);
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 300ms;
 
   & svg {
     width: 20px;
     height: 20px;
+    margin-right: 10px;
+    color: rgb(51, 103, 214);
+
   }
 
   &:hover {
-
+    color: rgb(21, 73, 184);
+    background-color: rgba(0, 0, 0, 0.2);
   }
 `

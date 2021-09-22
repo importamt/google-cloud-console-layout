@@ -4,14 +4,15 @@ import {SubMenuItem} from "../../molecules";
 
 interface IHamburgerMenu {
     isShow: boolean,
-    menus: Menu[] | null
+    menus: Menu[] | null,
+    selectedMenuId: string
 }
 
-export const HamburgerMenu = ({isShow, menus}: IHamburgerMenu) => {
+export const HamburgerMenu = ({isShow, menus, selectedMenuId}: IHamburgerMenu) => {
     return (
         <StyledHamburgerMenuWrap isShow={isShow}>
             <StyledHamburgerMenu isShow={isShow}>
-                {menus?.map(menu => <SubMenuItem key={menu.id} menu={menu}/>)}
+                {menus?.map(menu => <SubMenuItem key={menu.id} menu={menu} isSelected={selectedMenuId === menu.id}/>)}
             </StyledHamburgerMenu>
             <StyledHamburgerMenuDim isShow={isShow}/>
         </StyledHamburgerMenuWrap>
@@ -45,7 +46,8 @@ const StyledHamburgerMenu = styled.ul<{ isShow: boolean }>`
 
   display: flex;
   flex-direction: column;
-  background: palegreen;
+  color: #000000;
+  background: #ffffff;
 
   transition: left 500ms;
 

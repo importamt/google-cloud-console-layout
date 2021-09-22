@@ -3,13 +3,14 @@ import {Menu} from "../../../store/view/console";
 import {SubMenuItem} from "../../molecules";
 
 interface ISubMenu {
-    menus: Menu[] | null
+    menus: Menu[] | null,
+    selectedMenuId: string
 }
 
-export const SubMenu = ({menus}: ISubMenu) => {
+export const SubMenu = ({menus, selectedMenuId}: ISubMenu) => {
     return (
         <StyledSubMenu>
-            {menus?.map(menu => <SubMenuItem key={menu.id} menu={menu}/>)}
+            {menus?.map(menu => <SubMenuItem key={menu.id} menu={menu} isSelected={menu.id === selectedMenuId}/>)}
         </StyledSubMenu>
     )
 }
@@ -19,5 +20,6 @@ const StyledSubMenu = styled.ul`
   //justify-content: center;
   //align-items: center;
   flex-direction: column;
-  background: pink;
+  color: #000000;
+  background: #ffffff;
 `

@@ -17,5 +17,6 @@ const StyledContents = styled.aside`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: skyblue;
+  color: #000000;
+  background: #ffffff;
 `
