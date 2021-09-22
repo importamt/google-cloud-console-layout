@@ -24,12 +24,12 @@ export const Console = ({selectedMenuId, menus, children}: IConsole) => {
             <StyledConsoleMain>
                 <MainMenu menu={mainMenu}/>
                 <ActionBar menu={selectedMenu}/>
-                <SubMenu menus={menus.filter(menu => menu.parentId === mainMenu!.id)}/>
+                <SubMenu menus={menus.filter(menu => menu.parentId === mainMenu!.id)} selectedMenuId={selectedMenuId}/>
                 <Contents>
                     {children}
                 </Contents>
             </StyledConsoleMain>
-            <HamburgerMenu isShow={isHamburgerMenuShow} menus={menus.filter(menu => !menu.parentId)}/>
+            <HamburgerMenu isShow={isHamburgerMenuShow} menus={menus.filter(menu => !menu.parentId)} selectedMenuId={mainMenu?mainMenu.id:''}/>
         </StyledConsoleWrap>
     )
 }
@@ -50,7 +50,8 @@ const StyledConsoleMain = styled.main`
   margin-top: 50px;
   height: calc(100% - 52px);
 
-  gap: 2px;
+  background: rgba(0, 0, 0, 0.12);
+  gap: 1px;
 
   display: grid;
   grid-template-rows: 50px calc(100vh - 102px);
@@ -65,7 +66,7 @@ const StyledConsoleMain = styled.main`
     grid-template-columns: 250px calc(100vw - 252px);
 
     & > *:nth-child(1), & > *:nth-child(3) {
-      display: initial;
+      display: flex;
     }
   }
 
