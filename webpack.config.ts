@@ -35,6 +35,31 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: [MiniCssExtractPlugin.loader, 'css-loader']
+            },
+            {
+                test: /\.woff?$/,
+                use: [
+                    {
+                        loader: 'url-loader',
+                        options: {
+                            limit: 10000,
+                            name: './font/[hash].[ext]',
+                            mimetype: 'application/font-woff'
+                        }
+                    }
+                ]
+            },
+            {
+                test: /\.png?$/,
+                use: [
+                    {
+                        loader: 'url-loader',
+                        options: {
+                            limit: 10000,
+                            name: './image/[hash].[ext]',
+                        }
+                    }
+                ]
             }
         ]
     },
