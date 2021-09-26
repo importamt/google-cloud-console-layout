@@ -33,26 +33,26 @@ export const MENU_INFO: {
         url: '/home/about-me'
     },
 
-    MAP: {
-        id: 'MAP',
-        name: 'Map',
-        iconId: 'map',
-        url: '/map/clustering',
+    SAMPLE: {
+        id: 'SAMPLE',
+        name: 'sample1',
+        iconId: 'sample',
+        url: '/sample/sample1',
     },
 
-    MAP_CLUSTERING: {
-        id: 'MAP_CLUSTERING',
-        parentId: 'MAP',
+    SAMPLE_CLUSTERING: {
+        id: 'SAMPLE_CLUSTERING',
+        parentId: 'SAMPLE',
         name: 'Clustering',
         iconId: 'flowMerge',
-        url: '/map/clustering'
+        url: '/sample/sample1'
     },
-    MAP_DRAWING: {
-        id: 'MAP_DRAWING',
-        parentId: 'MAP',
-        name: 'Drawing',
+    SAMPLE_DRAWING: {
+        id: 'SAMPLE_DRAWING',
+        parentId: 'SAMPLE',
+        name: 'sample2',
         iconId: 'drawPolygon',
-        url: '/map/drawing'
+        url: '/sample/sample2'
     },
 
     USER: {

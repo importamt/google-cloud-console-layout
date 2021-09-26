@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {Home, Map, User} from "./src/pages";
+import {Home, Sample, User} from "./src/pages";
 import {Provider} from "react-redux";
 import {BrowserRouter as Router, Route, Switch,} from "react-router-dom";
 import {createStore} from './src/store';
@@ -18,7 +18,7 @@ ReactDOM.render(
                 <GlobalFonts/>
                 <Route path={"/"} exact component={Home}/>
                 <Route path={"/home"} component={Home}/>
-                <Route path={"/map"} component={Map}/>
+                <Route path={"/sample"} component={Sample}/>
                 <Route path={"/user"} component={User}/>
             </Provider>
         </Switch>
