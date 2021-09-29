@@ -4,12 +4,12 @@
 
 
 ````
-[일반 실행 방법] 
+[설치 방법]
+yarn install / npm install
+
+[실행 방법] 
 yarn start / npm run start
- 
-[stroybook 실행]
-yarn storybook / npm run storybook
-````
+ ````
 
 
 ### 목표
