@@ -30,5 +30,6 @@ interface IIcon {
 }
 
 export const Icon = ({iconId}: IIcon) => {
+    console.log("ICON : ", iconId)
     return iconId ? React.createElement(ICON_MAP[iconId]) : React.createElement(Error)
 }

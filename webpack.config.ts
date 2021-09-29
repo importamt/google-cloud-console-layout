@@ -63,7 +63,7 @@ module.exports = {
             }
         ]
     },
-    devtool: isProduction ? undefined : 'source-sample',
+    devtool: isProduction ? false : 'source-map',
     plugins: [
         new HtmlWebpackPlugin({
             template: 'index.html'

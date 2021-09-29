@@ -2,7 +2,7 @@ import {Menu} from "../../../store/view/console";
 import styled from "styled-components";
 import {NavLink} from "react-router-dom";
 import React from "react";
-import {Icon} from "../../atoms/icon/Icon";
+import {Icon} from "../../atoms";
 
 
 interface IHamburgerMenuItem {

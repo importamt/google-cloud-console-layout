@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {NavLink} from "react-router-dom";
 import {Menu} from "../../../store/view/console";
 import React from "react";
-import {Icon} from "../../atoms/icon/Icon";
+import {Icon} from "../../atoms";
 
 interface ISubMenuItem {
     menu: Menu | null,

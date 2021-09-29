@@ -36,19 +36,19 @@ export const MENU_INFO: {
     SAMPLE: {
         id: 'SAMPLE',
         name: 'sample1',
-        iconId: 'sample',
+        iconId: 'map',
         url: '/sample/sample1',
     },
 
-    SAMPLE_CLUSTERING: {
-        id: 'SAMPLE_CLUSTERING',
+    SAMPLE1: {
+        id: 'SAMPLE1',
         parentId: 'SAMPLE',
-        name: 'Clustering',
+        name: 'sample1',
         iconId: 'flowMerge',
         url: '/sample/sample1'
     },
-    SAMPLE_DRAWING: {
-        id: 'SAMPLE_DRAWING',
+    SAMPLE2: {
+        id: 'SAMPLE2',
         parentId: 'SAMPLE',
         name: 'sample2',
         iconId: 'drawPolygon',

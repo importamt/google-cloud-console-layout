@@ -8,7 +8,7 @@ export const Sample2 = () => {
     const dispatch = useDispatch()
 
     useMount(() => {
-        dispatch(setSelectedMenuId(MENU_INFO.MAP_DRAWING.id))
+        dispatch(setSelectedMenuId(MENU_INFO.SAMPLE2.id))
     })
 
     const selectedMenuId = useSelector((state: RootState) => state.view.console.selectedMenuId)
